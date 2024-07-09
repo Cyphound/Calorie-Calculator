@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calorías</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand ps-3" href="#">Calculadora de Calorías</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Calculadora</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1 class="text-center">Calculadora de Calorías Quemadas</h1>
+    <div id="contenedorAlertas"></div>
+    <form id="formularioCalorias">
+        <div class="mb-3">
+            <label for="peso" class="form-label">Peso (kg)</label>
+            <input type="number" class="form-control" id="peso" min="1" max="120" required>
+        </div>
+        <div class="mb-3">
+            <label for="minutos" class="form-label">Minutos de Ejercicio</label>
+            <input type="number" class="form-control" id="minutos" min="5" max="150" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Actividad</label>
+            <div>
+                <input type="radio" id="caminar" name="actividad" value="3.5" checked>
+                <label for="caminar">Caminar</label>
+            </div>
+            <div>
+                <input type="radio" id="correr" name="actividad" value="8.0">
+                <label for="correr">Correr</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+</div>
+
+
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
